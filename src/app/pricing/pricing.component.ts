@@ -12,11 +12,10 @@ export class PricingComponent implements OnInit {
   constructor(private data: DataService) { }
 
   ngOnInit() {
-    this.data.getData().subscribe(d => {
+    this.data.getData().subscribe(d=> {
       this.users= d;
       //alert(this.users.arr.length);
       this.count=this.users.length;
     })
   }
-
 }
